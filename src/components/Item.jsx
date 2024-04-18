@@ -26,7 +26,7 @@ export default function Item({ title, id, status }) {
         setVisible(prev => !prev);
         const storedTodos = JSON.parse(localStorage.getItem('tasks'));
         let removeTodos = storedTodos.filter(item => {
-            if (item.id != id) {
+            if (item.id !== id) {
                 return true
             }
             return false
